@@ -1,36 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    background: #0f172a;
-    color: #e2e8f0;
+    background: #f8fafc;
+    color: #0f172a;
+    line-height: 1.6;
 }
 
+/* HEADER */
 header {
     text-align: center;
-    padding: 60px 20px;
-    background: #1e293b;
+    padding: 90px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #475569;
+    font-size: 1.1rem;
+}
+
+/* SECTIONS */
 section {
     max-width: 800px;
     margin: auto;
-    padding: 30px 20px;
+    padding: 50px 20px;
 }
 
 h1, h2 {
-    color: #38bdf8;
+    color: #111827; /* casi negro elegante */
 }
 
+/* CARDS */
 .card {
-    background: #1e293b;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
+    background: #ffffff;
+    padding: 20px;
+    margin: 14px 0;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* LINKS / BOTONES (gris elegante, no azul) */
+a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background: #374151;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #1e293b;
-    margin-top: 40px;
+    padding: 30px;
+    background: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 50px;
+    color: #64748b;
 }
