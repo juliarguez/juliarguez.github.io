@@ -56,19 +56,27 @@ h1, h2 {
 }
 
 /* LINKS / BOTONES (gris elegante, no azul) */
-a {
+
+.btn {
     display: inline-block;
-    margin-top: 12px;
     padding: 10px 14px;
-    background: #111827;
-    color: white;
-    text-decoration: none;
     border-radius: 10px;
     font-weight: 600;
-    transition: all 0.2s ease;
+    text-decoration: none;
+    transition: 0.2s;
 }
 
-a:hover {
+.btn-dark {
+    background: #111827;
+    color: white;
+}
+
+.btn-light {
+    background: #e2e8f0;
+    color: #111827;
+}
+
+.btn:hover {
     background: #374151;
     transform: scale(1.05);
 }
