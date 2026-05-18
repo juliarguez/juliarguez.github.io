@@ -34,16 +34,6 @@ section {
     max-width: 800px;
     margin: auto;
     padding: 50px 20px;
-
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.7s ease;
-    min-height: 100vh;
-}
-
-section.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 h1, h2 {

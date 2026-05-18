@@ -76,31 +76,5 @@
         <p>© 2026 - Mi Portfolio</p>
     </footer>
     
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const sections = document.querySelectorAll("section");
-
-            console.log("Sections found:", sections.length);
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-
-                    console.log("Visible:", entry.target);
-
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("show");
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-
-            sections.forEach(section => observer.observe(section));
-        });
-    </script>
-
-
-
 </body>
 </html>
