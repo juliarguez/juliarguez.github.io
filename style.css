@@ -34,10 +34,19 @@ section {
     max-width: 800px;
     margin: auto;
     padding: 50px 20px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h1, h2 {
-    color: #111827; /* casi negro elegante */
+    color: #111827;
 }
 
 /* CARDS */
@@ -55,7 +64,7 @@ h1, h2 {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* LINKS / BOTONES (gris elegante, no azul) */
+/* LINKS / BOTONES */
 
 .btn {
     display: inline-block;

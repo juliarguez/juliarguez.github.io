@@ -11,16 +11,15 @@
 
     <header>
         <h1>Hola, soy Julia</h1>
-        <p>Estudiante de informática | Python · HTML · JavaScript</p>
+        <p>Estudiante de informática | Desarrollo web y Python</p>
     </header>
 
     <section>
         <h2>Sobre mí</h2>
         <p>
-           Actualmente estoy aprendiendo desarrollo web y programación, trabajando con tecnologías como HTML,
-           CSS, JavaScript y Python. <br>
-           Me centro en crear pequeños proyectos que me permitan mejorar mis habilidades
-           y entender mejor el desarrollo de aplicaciones..
+           Actualmente estudio informática y estoy aprendiendo desarrollo web y programación. 
+           Me enfoco en proyectos pequeños con HTML, CSS, JavaScript y Python para mejorar mis 
+           habilidades y seguir ganando experiencia práctica.
         </p>
     </section>
 
@@ -40,7 +39,8 @@
        
         <div class="card">
             <h3>Portfolio web personal</h3>
-            <p>Página creada con HTML y CSS donde presento mi información, habilidades y proyectos. Publicada con GitHub Pages y en proceso de mejora continua.</p>
+            <p>Web personal creada con HTML y CSS donde muestro mi información, habilidades y proyectos. <br>
+                Está publicada con GitHub Pages y en evolución constante.</p>
             <a class="btn btn-light" href="https://github.com/juliarguez/juliarguez.github.io" target="_blank">
                 Ver en GitHub
             </a>
@@ -48,7 +48,7 @@
 
         <div class="card">
             <h3>To-Do App en Python </h3>
-            <p> Aplicación de consola para gestionar tareas con guardado de datos en JSON.</p>
+            <p>Aplicación de consola para gestionar tareas con almacenamiento en JSON, incluyendo creación, eliminación y persistencia de datos.</p>
             <a class="btn btn-light" href="https://github.com/juliarguez/todo-app-python" target="_blank">
                 Ver en GitHub
             </a>
@@ -56,7 +56,8 @@
 
         <div class="card">
             <h3>Genetic Algorithm - Hyperparameter Optimization </h3>
-            <p> Proyecto universitario en desarrollo donde se aplican algoritmos genéticos para la optimización de hiperparámetros en modelos de IA.</p>
+            <p>Proyecto universitario donde aplico algoritmos genéticos para optimizar hiperparámetros en modelos de 
+                machine learning.</p>
             <a class="btn btn-light" href="https://github.com/juliarguez/genetic-algorithm-hyperparameter-optimization" target="_blank">
                 Ver en GitHub
             </a>
@@ -66,7 +67,7 @@
 
     <section>
         <h2>Contacto</h2>
-        <p>Email: juliarodriguezg00@gmail.com</p> 
+        <p>Email: <a href="mailto:juliarodriguezg00@gmail.com">juliarodriguezg00@gmail.com</a></p> 
         <a class="btn btn-dark" href="https://www.linkedin.com/in/julia-rodríguez-gómez-66b3013b9" target="_blank">LinkedIn</a>
         <a class="btn btn-dark" href="https://github.com/juliarguez" target="_blank">GitHub</a>
     </section>
@@ -75,5 +76,25 @@
         <p>© 2026 - Mi Portfolio</p>
     </footer>
     
+    <script>
+        const sections = document.querySelectorAll("section");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+
+
 </body>
 </html>
