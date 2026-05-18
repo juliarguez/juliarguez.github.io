@@ -77,20 +77,26 @@
     </footer>
     
     <script>
-        const sections = document.querySelectorAll("section");
+        document.addEventListener("DOMContentLoaded", () => {
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                }
+            const sections = document.querySelectorAll("section");
+
+            console.log("Sections found:", sections.length);
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+
+                    console.log("Visible:", entry.target);
+
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+                });
+            }, {
+                threshold: 0.1
             });
-        }, {
-            threshold: 0.15
-        });
 
-        sections.forEach(section => {
-            observer.observe(section);
+            sections.forEach(section => observer.observe(section));
         });
     </script>
 
